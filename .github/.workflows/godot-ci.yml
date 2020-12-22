@@ -11,7 +11,7 @@ jobs:
     name: Windows Export
     runs-on: ubuntu-latest
     container:
-      image: ${GODOT_IMAGE}
+      image: $GODOT_IMAGE
     steps:
       - name: Checkout
         uses: actions/checkout@v2
