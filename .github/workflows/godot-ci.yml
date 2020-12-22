@@ -3,7 +3,6 @@ on: push
 
 env:
   GODOT_VERSION: 3.2.3
-  GODOT_IMAGE: barichello/godot-ci:3.2.3
   EXPORT_NAME: godot ci example
 
 jobs:
@@ -11,7 +10,7 @@ jobs:
     name: Windows Export
     runs-on: ubuntu-latest
     container:
-      image: $GODOT_IMAGE
+      image: barichello/godot-ci:3.2.3
     steps:
       - name: Checkout
         uses: actions/checkout@v2
